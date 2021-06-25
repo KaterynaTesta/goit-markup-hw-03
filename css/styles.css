@@ -90,7 +90,7 @@ img {
 
 
 /* Navigation */
-.nav-link:not(:last-child) {
+.nav-item:not(:last-child) {
    margin-right: 50px; 
 }
 
@@ -172,9 +172,10 @@ border: none;
 .about-list {
   display: flex;
   margin-left: -30px;
-  margin-top: -10px;
+  margin-top: -10px; 
 }
 .advantages {
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 10px;
 }
@@ -246,11 +247,21 @@ text-transform: uppercase;
   color: var(--text-color);
 }
 /* Footer */
+
 .footer {
-  background-color: #2F303A;
+ padding-top: 60px;
+ padding-bottom: 60px;
+background-color: #2F303A;
+}
+.footer-item {
+  flex-direction: column;
+}
+.footer-contact {
+  list-style: none;
 }
 .logo-footer
  {
+   padding-top: 60px;
   font-family: var(--secondary-font);
   font-weight: var(--main-font-weight);
   font-size: 26px;
@@ -260,6 +271,7 @@ text-transform: uppercase;
 }
 
 .contact-info-address {
+ margin-top: 20px;
 font-weight: var(--secondary-font-weight);
 font-size: 14px;
 line-height: 1.71;
@@ -272,6 +284,7 @@ color: #FFFFFF;
 }
 .contact-info-mail,
 .contact-info-phone {
+margin-top: 9px;
  font-weight: var(--secondary-font-weight);
 font-size: 14px;
 line-height: 1.71;
@@ -288,14 +301,24 @@ color: var(--text-color);
 }
 /* Portfolio */
 /* Button */
+.filter-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 109px;
+}
+.btn-item {
+  margin-right: 8px;
+}
 .menu-btn {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: var(--title-color);
+  /* color: var(--title-color); */
   background-color: #f5f4fa;
+  border-radius: 4px;
   cursor: pointer;
 }
 .menu-btn:hover,
@@ -304,12 +327,28 @@ color: var(--text-color);
   background-color: var(--accent-color);
 }
 /* Our projects */
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-desc {
+  flex-basis: calc ((100% - 270px) / 9);
+  margin-left: 30px;
+  margin-top: 30px;
+  outline: 1px solid #EEEEEE;
+  
+}
 .project {
-font-weight: 700;
-font-size;: 18px
-line-height: 2;
-text-align: left;
-color: var(--title-color);
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background: #FFFFFF;
+  font-weight: 700;
+  font-size;: 18px
+  line-height: 2;
+  text-align: left;
+  color: var(--title-color);
 }
 .project-type {
 font-weight: var(--secondary-font-weight);
