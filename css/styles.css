@@ -1,0 +1,200 @@
+:root {
+  --accent-color: #2196f3;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-font-weight: 700;
+  --secondary-font-weight: 400;
+  --text-color: #757575;
+  --title-color: #212121;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+body {
+  font-family: var(--main-font);
+  color: var(--title-color);
+}
+/* Logo */
+.logo,
+.logo-item {
+  font-family: var(--secondary-font);
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-align: left;
+}
+.logo-item {
+  color: var(--accent-color);
+}
+
+
+/* Navigation */
+.nav-link,
+.contact {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-color);
+  text-align: left;
+  }
+  .contact {
+    color: var(--text-color);
+  }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+/* Hero */
+.title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff; 
+    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: blueviolet;
+}
+.modal-btn {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/* Our advantages */
+.about-us {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  text-align: left;
+  color: var(--title-color);
+}
+.about-us-desc {
+  font-family: var(--main-font);
+  font-weight: var(--secondary-font-weight);
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: var(--text-color);
+}
+/* What we do */
+.subtitle {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  font-size: 36px;
+  line-height: 2.62;
+  text-align: center;
+  color: var(--title-color);
+}
+/* Our team */
+.subtitle-photo-name {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-color);
+}
+.position {
+  font-family: var(--main-font);
+  font-weight: var(--secondary-font-weight);
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--text-color);
+}
+/* Footer */
+.footer {
+  background-color: #2F303A;
+}
+.logo-footer
+ {
+  font-family: var(--secondary-font);
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
+   color: #FFFFFF; 
+  text-align: left;
+}
+
+.contact-info-address {
+font-weight: var(--secondary-font-weight);
+font-size: 14px;
+line-height: 1.71;
+text-align: left;
+color: #FFFFFF; 
+}
+.contact-info-address:hover,
+.contact-info-address:focus{
+  color: var(--accent-color);
+}
+.contact-info-mail,
+.contact-info-phone {
+ font-weight: var(--secondary-font-weight);
+font-size: 14px;
+line-height: 1.71;
+text-align: left;
+color: var(--text-color);
+}
+.contact-info-mail:hover,
+.contact-info-mail:focus {
+  color: var(--accent-color);  
+} 
+.contact-info-phone:hover,
+.contact-info-phone:focus {
+  color: var(--accent-color);
+}
+/* Portfolio */
+/* Button */
+.menu-btn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.menu-btn:hover,
+.menu-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/* Our projects */
+.project {
+font-weight: 700;
+font-size;: 18px
+line-height: 2;
+text-align: left;
+color: var(--title-color);
+}
+.project-type {
+font-weight: var(--secondary-font-weight);
+font-size: 16px;
+line-height: 1.87;
+text-align: left;
+letter-spacing: 3%;
+color: var(--text-color)
+}
