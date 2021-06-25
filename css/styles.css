@@ -1,3 +1,4 @@
+
 :root {
   --accent-color: #2196f3;
   --main-font: 'Roboto', sans-serif;
@@ -7,6 +8,7 @@
   --text-color: #757575;
   --title-color: #212121;
 }
+
 .link {
   text-decoration: none;
 }
@@ -17,9 +19,57 @@ body {
   font-family: var(--main-font);
   color: var(--title-color);
 }
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul, li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+  /* COMPONENTS */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+  /* HEADER */
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+  }
 /* Logo */
+.logo {
+  margin-right: 87px;
+}
 .logo,
 .logo-item {
+
   font-family: var(--secondary-font);
   font-weight: var(--main-font-weight);
   font-size: 26px;
@@ -27,12 +77,17 @@ body {
   color: #000000;
   text-align: left;
 }
+
 .logo-item {
   color: var(--accent-color);
 }
 
 
 /* Navigation */
+.nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link,
 .contact {
   font-family: var(--main-font);
@@ -42,6 +97,10 @@ body {
   color: var(--title-color);
   text-align: left;
   }
+ .contact-mail {
+   margin-left: auto;
+   margin-right: 50px;
+ }
   .contact {
     color: var(--text-color);
   }
@@ -55,26 +114,42 @@ body {
   color: var(--accent-color);
 }
 /* Hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
+  background-color: #2f303a;
+  border: 1px solid red;
+}
 .title {
+  
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff; 
-    text-transform: uppercase;
+  text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: blueviolet;
+
 }
 .modal-btn {
-  font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  color: #ffffff;
-  background-color: var(--accent-color);
-  cursor: pointer;
+padding: 10px, 32px;
+left: 715px;
+top: 430px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+margin-top: 30px;
+font-family: var(--main-font);
+font-weight: var(--main-font-weight);
+font-size: 16px;
+line-height: 1.9;
+text-align: center;
+color: #ffffff;
+background-color: var(--accent-color);
+cursor: pointer;
+border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
