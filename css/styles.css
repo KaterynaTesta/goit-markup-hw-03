@@ -44,7 +44,11 @@ img {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+  }
 
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
   /* HEADER */
   .header-container {
@@ -54,6 +58,7 @@ img {
   .header {
     padding-top: 35px;
     padding-bottom: 35px;
+    border: 1px solid #ECECEC;
   }
   .navigation {
     display: flex;
@@ -62,6 +67,7 @@ img {
   .list {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
 /* Logo */
 .logo {
@@ -85,7 +91,7 @@ img {
 
 /* Navigation */
 .nav-link:not(:last-child) {
-  margin-right: 50px;
+   margin-right: 50px; 
 }
 
 .nav-link,
@@ -116,10 +122,9 @@ img {
 /* Hero */
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 280px; 
   text-align: center;
   background-color: #2f303a;
-  border: 1px solid red;
 }
 .title {
   
@@ -157,6 +162,22 @@ border: none;
   background-color: var(--accent-color);
 }
 /* Our advantages */
+
+/* .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+}  */
+
+.about-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.advantages {
+  margin-left: 30px;
+  margin-top: 10px;
+}
 .about-us {
   font-family: var(--main-font);
   font-weight: var(--main-font-weight);
@@ -176,7 +197,18 @@ text-transform: uppercase;
   color: var(--text-color);
 }
 /* What we do */
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+   margin-top: -50px;
+  margin-left: -30px;
+}
+.work-img {
+  margin-top: 50px;
+  margin-left: 30px;
+}
 .subtitle {
+  margin-bottom: 50px;
   font-family: var(--main-font);
   font-weight: var(--main-font-weight);
   font-size: 36px;
@@ -185,11 +217,24 @@ text-transform: uppercase;
   color: var(--title-color);
 }
 /* Our team */
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+.team-desc {
+  flex-basis: calc ((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 50px;
+}
 .subtitle-photo-name {
+  margin-bottom: 10px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   color: var(--title-color);
 }
 .position {
@@ -197,6 +242,7 @@ text-transform: uppercase;
   font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   color: var(--text-color);
 }
 /* Footer */
