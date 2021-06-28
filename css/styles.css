@@ -44,7 +44,6 @@ img {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  /* outline: 1px solid red; */
 }
 
 .section {
@@ -214,7 +213,7 @@ img {
   color: var(--text-color);
 }
 /* What we do */
-.what-we-do-section {
+.what-we-do {
   padding-top: 47px;
 }
 .our-work {
@@ -238,6 +237,9 @@ img {
   color: var(--title-color);
 }
 /* Our team */
+.team-section {
+  background: #f5f4fa;
+}
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
@@ -337,7 +339,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  margin-top: 109px;
+  margin-top: 94px;
 }
 .btn-item:not(:last-child) {
   margin-right: 8px;
