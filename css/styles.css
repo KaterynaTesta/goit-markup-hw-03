@@ -40,10 +40,11 @@ img {
 
 /* COMPONENTS */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  /* outline: 1px solid red; */
 }
 
 .section {
@@ -64,6 +65,10 @@ img {
   display: flex;
   align-items: center;
 }
+.link.current {
+  color: var(--accent-color);
+}
+
 .list {
   display: flex;
   align-items: center;
@@ -128,11 +133,14 @@ img {
 /* Hero */
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
 }
 .title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -143,9 +151,9 @@ img {
   letter-spacing: 0.06em;
 }
 .modal-btn {
+  width: 200px;
+  height: 50px;
   padding: 10px, 32px;
-  left: 715px;
-  top: 430px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -206,6 +214,9 @@ img {
   color: var(--text-color);
 }
 /* What we do */
+.what-we-do-section {
+  padding-top: 47px;
+}
 .our-work {
   display: flex;
   flex-wrap: wrap;
@@ -222,7 +233,7 @@ img {
   font-weight: var(--main-font-weight);
   font-size: 36px;
   letter-spacing: 0.03em;
-  line-height: 2.62;
+  line-height: 1.6;
   text-align: center;
   color: var(--title-color);
 }
@@ -261,19 +272,23 @@ img {
   text-align: center;
   color: var(--text-color);
 }
+.team-profile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 /* Footer */
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
 }
-
 .footer-contact {
   list-style: none;
+  margin-top: 20px;
 }
 .logo-footer {
-  /* padding-top: 60px; */
+  padding-top: 60px;
   font-family: var(--secondary-font);
   font-weight: var(--main-font-weight);
   font-size: 26px;
@@ -283,8 +298,11 @@ img {
   text-align: left;
 }
 
+.contact-info-mail {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
 .contact-info-address {
-  margin-top: 20px;
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -298,7 +316,6 @@ img {
 }
 .contact-info-mail,
 .contact-info-phone {
-  margin-top: 9px;
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -322,7 +339,7 @@ img {
   margin-bottom: 34px;
   margin-top: 109px;
 }
-.btn-item {
+.btn-item:not(:last-child) {
   margin-right: 8px;
 }
 .menu-btn {
@@ -335,7 +352,10 @@ img {
   color: var(--title-color);
   background-color: #f5f4fa;
   border: none;
+  padding: 6px 22px;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
   cursor: pointer;
 }
 .menu-btn:hover,
@@ -354,14 +374,18 @@ img {
   flex-basis: calc ((100% - 270px) / 9);
   margin-left: 30px;
   margin-top: 30px;
-  outline: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.project-profile {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .project-border {
   margin-bottom: 79px;
 }
 .project {
-  padding-top: 20px;
-  padding-bottom: 4px;
   background: #ffffff;
   font-weight: 700;
   font-size: 18px;
