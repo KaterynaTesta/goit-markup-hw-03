@@ -193,7 +193,7 @@ img {
   margin-top: 10px;
 }
 .about-us {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-family: var(--main-font);
   font-weight: var(--main-font-weight);
   font-size: 14px;
@@ -300,10 +300,10 @@ img {
   text-align: left;
 }
 
-.contact-info-mail {
-  padding-top: 9px;
-  padding-bottom: 9px;
+.footer-item {
+  margin-bottom: 9px;
 }
+
 .contact-info-address {
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
@@ -338,8 +338,8 @@ img {
 .filter-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
-  margin-top: 94px;
+  padding: 94px 0px;
+  padding-bottom: 34px;
 }
 .btn-item:not(:last-child) {
   margin-right: 8px;
@@ -373,7 +373,7 @@ img {
   margin-top: -30px;
 }
 .project-desc {
-  flex-basis: calc ((100% - 270px) / 9);
+  flex-basis: calc((100% - 270px) / 9);
   margin-left: 30px;
   margin-top: 30px;
   border-bottom: 1px solid #eeeeee;
