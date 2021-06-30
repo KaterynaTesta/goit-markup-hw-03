@@ -318,10 +318,7 @@ img {
   text-align: left;
   color: #ffffff;
 }
-.contact-info-address:hover,
-.contact-info-address:focus {
-  color: var(--accent-color);
-}
+
 .contact-info-mail,
 .contact-info-phone {
   font-weight: var(--secondary-font-weight);
