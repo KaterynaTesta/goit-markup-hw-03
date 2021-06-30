@@ -56,8 +56,8 @@ img {
   align-items: center;
 }
 .header {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border: 1px solid #ececec;
 }
 .navigation {
@@ -108,9 +108,12 @@ img {
   color: var(--title-color);
   text-align: left;
 }
-.contact-mail {
-  margin-left: auto;
+.contact-header {
   margin-right: 50px;
+  margin-left: auto;
+}
+.contact-mail {
+  /* margin-right: 50px; */
   color: var(--text-color);
 }
 .contact {
@@ -285,12 +288,15 @@ img {
 .footer {
   background-color: #2f303a;
 }
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-contact {
   list-style: none;
   margin-top: 20px;
 }
 .logo-footer {
-  padding-top: 60px;
   font-family: var(--secondary-font);
   font-weight: var(--main-font-weight);
   font-size: 26px;
@@ -356,14 +362,14 @@ img {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    0px 2px 2px rgb(0 0 0 / 12%);
   cursor: pointer;
 }
 .menu-btn:hover,
 .menu-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 /* Our projects */
 .project-item {
@@ -376,13 +382,18 @@ img {
   flex-basis: calc((100% - 270px) / 9);
   margin-left: 30px;
   margin-top: 30px;
-  border-bottom: 1px solid #eeeeee;
+}
+.project-link {
+  display: block;
 }
 .project-profile {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .project-border {
   margin-bottom: 79px;
